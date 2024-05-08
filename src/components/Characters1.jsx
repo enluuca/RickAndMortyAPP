@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { CharactersCard } from "./CharactersCard";
 import { get } from "../utils/conexionAPI";
 import { NameFilter } from "./NameFilter";
-import {Pagination} from "./Pagination";
+import { Pagination } from "./Pagination";
+import FavoriteButton from "./FavoriteButton";
 import "../style/Characters1.css";
 
 export const Characters = () => {
@@ -42,6 +43,11 @@ export const Characters = () => {
         setCurrentPage(1); // Reset to first page when filter changes
     };
 
+    const handleFavoriteToggle = (characterId) => {
+        // Aquí puedes implementar la lógica para agregar o remover el personaje de favoritos
+        console.log(`Toggle favorite for character with ID: ${characterId}`);
+    };
+
     return (
         <>
             <NameFilter onFilterChange={handleFilterChange} />
@@ -53,7 +59,13 @@ export const Characters = () => {
             />
             <ul className="characters">
                 {characters.map((character) => (
-                    <CharactersCard key={character.id} characterMap={character} />
+                    <li key={character.id}>
+                        <CharactersCard characterMap={character} />
+                        <FavoriteButton
+                            characterId={character.id}
+                            onFavoriteToggle={handleFavoriteToggle}
+                        />
+                    </li>
                 ))}
             </ul>
         </>

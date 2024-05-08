@@ -5,7 +5,7 @@ export const NavBar = () => {
     return (
         <nav>
             <div className="logo">
-                <img src="ruta_de_la_imagen" alt="Logo" />
+                <img src="/src/assets/RyM.png" alt="asd" />
             </div>
             <ul className="nav-links">
                 <li>
