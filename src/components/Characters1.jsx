@@ -1,24 +1,31 @@
+import React, { useState, useEffect } from "react";
 import { CharactersCard } from "./CharactersCard";
 import { get } from "../utils/conexionAPI";
-import { useState, useEffect } from "react";
 import { NameFilter } from "./NameFilter";
+import {Pagination} from "./Pagination";
 import "../style/Characters1.css";
 
 export const Characters = () => {
     const [characters, setCharacters] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
+    const [totalPages, setTotalPages] = useState(0);
     const [nameFilter, setNameFilter] = useState("");
 
     useEffect(() => {
+        fetchData();
+    }, [currentPage, nameFilter]);
+
+    const fetchData = () => {
         get(`/character?page=${currentPage}&name=${nameFilter}`)
             .then((data) => {
                 console.log(data.results);
                 setCharacters(data.results);
+                setTotalPages(data.info.pages);
             })
             .catch((error) => {
                 console.error("Error fetching characters:", error);
             });
-    }, [currentPage, nameFilter]);
+    };
 
     const nextPage = () => {
         setCurrentPage((prevPage) => prevPage + 1);
@@ -32,15 +39,18 @@ export const Characters = () => {
 
     const handleFilterChange = (value) => {
         setNameFilter(value);
+        setCurrentPage(1); // Reset to first page when filter changes
     };
 
     return (
         <>
             <NameFilter onFilterChange={handleFilterChange} />
-            <div className="pagination">
-                <button onClick={previousPage}>Previous</button>
-                <button onClick={nextPage}>Next</button>
-            </div>
+            <Pagination
+                currentPage={currentPage}
+                totalPages={totalPages}
+                onNextPage={nextPage}
+                onPreviousPage={previousPage}
+            />
             <ul className="characters">
                 {characters.map((character) => (
                     <CharactersCard key={character.id} characterMap={character} />
@@ -49,3 +59,5 @@ export const Characters = () => {
         </>
     );
 };
+
+export default Characters;
