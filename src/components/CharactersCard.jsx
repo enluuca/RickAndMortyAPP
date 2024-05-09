@@ -9,6 +9,7 @@ export const CharactersCard = ({ characterMap }) => {
             <img src={characterMap.image} alt="" />
             <h1>{characterMap.name}</h1>
             <p>{characterMap.id}</p>
+            <p>{characterMap.status}</p>
             </Link> 
 
         

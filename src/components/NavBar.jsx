@@ -12,7 +12,7 @@ export const NavBar = () => {
                     <Link to="/characters">Characters</Link>
                 </li>
                 <li>
-                    <Link to="/ubications">Ubication</Link>
+                    <Link to="/locations">Location</Link>
                 </li>
                 <li>
                     <Link to="/episodes">Episode</Link>

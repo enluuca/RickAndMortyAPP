@@ -4,6 +4,7 @@ import { get } from "../utils/conexionAPI";
 import { NameFilter } from "./NameFilter";
 import { Pagination } from "./Pagination";
 import FavoriteButton from "./FavoriteButton";
+import StatusFilter from "./StatusFilter"; // Importa el componente de filtro de estado
 import "../style/Characters1.css";
 
 export const Characters = () => {
@@ -11,13 +12,19 @@ export const Characters = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [totalPages, setTotalPages] = useState(0);
     const [nameFilter, setNameFilter] = useState("");
+    const [statusFilter, setStatusFilter] = useState("");
 
     useEffect(() => {
         fetchData();
-    }, [currentPage, nameFilter]);
+    }, [currentPage, nameFilter, statusFilter]);
 
     const fetchData = () => {
-        get(`/character?page=${currentPage}&name=${nameFilter}`)
+        let apiUrl = `/character?page=${currentPage}&name=${nameFilter}`;
+        if (statusFilter) {
+            apiUrl += `&status=${statusFilter}`;
+        }
+
+        get(apiUrl)
             .then((data) => {
                 console.log(data.results);
                 setCharacters(data.results);
@@ -40,17 +47,22 @@ export const Characters = () => {
 
     const handleFilterChange = (value) => {
         setNameFilter(value);
-        setCurrentPage(1); // Reset to first page when filter changes
+        setCurrentPage(1);
+    };
+
+    const handleStatusFilterChange = (status) => {
+        setStatusFilter(status);
+        setCurrentPage(1);
     };
 
     const handleFavoriteToggle = (characterId) => {
-        // Aquí puedes implementar la lógica para agregar o remover el personaje de favoritos
         console.log(`Toggle favorite for character with ID: ${characterId}`);
     };
 
     return (
         <>
             <NameFilter onFilterChange={handleFilterChange} />
+            <StatusFilter onStatusChange={handleStatusFilterChange} /> {/* Usa el componente de filtro de estado */}
             <Pagination
                 currentPage={currentPage}
                 totalPages={totalPages}
@@ -71,5 +83,3 @@ export const Characters = () => {
         </>
     );
 };
-
-export default Characters;
