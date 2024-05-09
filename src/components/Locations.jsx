@@ -49,7 +49,6 @@ export const Locations = () => {
 
     return (
         <>
-            <NameFilter onFilterChange={handleFilterChange} />
             <Pagination
                 currentPage={currentPage}
                 totalPages={totalPages}
