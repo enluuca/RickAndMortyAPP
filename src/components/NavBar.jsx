@@ -1,24 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../style/NavBar.css"
 
 export const NavBar = () => {
     return (
-        <nav>
+        <nav className="navBar">
             <div className="logo">
-                <img src="/src/assets/RyM.png" alt="asd" />
+                <img src="/src/assets/RyM.png" alt="asd" className="logo-img"/>
             </div>
-            <ul className="nav-links">
-                <li>
-                    <Link to="/characters">Characters</Link>
-                </li>
-                <li>
-                    <Link to="/locations">Location</Link>
-                </li>
-                <li>
-                    <Link to="/episodes">Episode</Link>
-                </li>
-            </ul>
+            <div className="nav-links">
+                <Link to="/characters" className="link">Characters</Link>
+                <Link to="/locations" className="link">Location</Link>
+                <Link to="/episodes" className="link">Episode</Link>
+            </div>
+
         </nav>
     );
 };
-

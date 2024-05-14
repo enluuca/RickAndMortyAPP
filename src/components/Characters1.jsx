@@ -63,7 +63,7 @@ export const Characters = () => {
         <>
             <NameFilter onFilterChange={handleFilterChange} />
             <StatusFilter onStatusChange={handleStatusFilterChange} /> {/* Usa el componente de filtro de estado */}
-            <Pagination
+            <Pagination 
                 currentPage={currentPage}
                 totalPages={totalPages}
                 onNextPage={nextPage}

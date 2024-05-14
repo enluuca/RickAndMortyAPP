@@ -1,0 +1,29 @@
+.navBar{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+    align-items: center; 
+}
+.logo{
+    align-items: center;
+}
+               
+.logo-img{
+    height: 200px; 
+}
+
+.nav-links{
+    font-size: 25px;
+    transform: none;
+}
+.link{
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(216, 204, 204);
+}
+
+.link:hover{
+    color: greenyellow;
+    text-decoration: none;
+}
