@@ -3,7 +3,44 @@
     margin: 0;
     box-sizing: border-box;
 
-    /*background-color: rgb(39, 37, 37);*/
+    
     background-color: #16161d;
     
+}
+
+  
+  footer {
+    background-color: #16161d; 
+    color: white; 
+    padding: 20px;
+  }
+  
+  footer p {
+    font-weight: bold;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer li {
+    margin-bottom: 10px; 
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  footer a:hover {
+    color: lightgray; 
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+    align-items: center; 
 }
