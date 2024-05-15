@@ -2,17 +2,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .About-Text{
-color: rgb(216, 204, 204);
-font-size: 18px;
+    color: rgb(216, 204, 204);
+    font-size: 18px;
+    padding: 0 5vw;
 }
 
 .title {
-    padding: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
     color: rgb(35, 221, 228);
     font-size: 23px;
+    text-align: center;
 }
 
+.video {
+    margin-top: 40px;
+}
+
+.Text {
+    text-align: center;
+    margin: 25px;
+}

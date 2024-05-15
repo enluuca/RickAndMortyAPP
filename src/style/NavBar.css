@@ -4,23 +4,31 @@
     height: 300px;
     width: 100%;
     align-items: center; 
+    margin-bottom: 50px;
 }
+
 .logo{
     align-items: center;
 }
                
 .logo-img{
     height: 200px; 
+    margin: 20px;
 }
 
 .nav-links{
-    font-size: 25px;
+    font-size: 23px;
     transform: none;
 }
+
 .link{
     text-decoration: none;
-    padding: 10px;
-    color: rgb(216, 204, 204);
+    padding: 20px;
+    color: rgb(35, 221, 228);
+    margin: 30px;
+    background-color: rgba(245, 141, 227, 0.2);
+    border-radius: 30px;
+    font-weight: bold;
 }
 
 .link:hover{
