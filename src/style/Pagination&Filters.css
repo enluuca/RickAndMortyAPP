@@ -16,9 +16,7 @@ margin-left: 5px;
 padding-left: 10px;
 }
 .nameFilter-input::placeholder {
-    color: black;
-    
-   
+    color: black;  
 }
 
 /* Filtro por estado */
