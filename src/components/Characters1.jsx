@@ -61,9 +61,9 @@ export const Characters = () => {
 
     return (
         <>
-            <NameFilter onFilterChange={handleFilterChange} />
-            <StatusFilter onStatusChange={handleStatusFilterChange} /> {/* Usa el componente de filtro de estado */}
-            <Pagination 
+            <NameFilter className="characters" onFilterChange={handleFilterChange} />
+            <StatusFilter className="characters" onStatusChange={handleStatusFilterChange} /> {/* Usa el componente de filtro de estado */}
+            <Pagination className="characters"
                 currentPage={currentPage}
                 totalPages={totalPages}
                 onNextPage={nextPage}
@@ -71,7 +71,7 @@ export const Characters = () => {
             />
             <ul className="characters">
                 {characters.map((character) => (
-                    <li key={character.id}>
+                    <li className="characters-li" key={character.id}>
                         <CharactersCard characterMap={character} />
                         <FavoriteButton
                             characterId={character.id}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../style/Characters1.css";
 
 export const NameFilter = ({ onFilterChange }) => {
     const [filterValue, setFilterValue] = useState("");
@@ -10,8 +11,8 @@ export const NameFilter = ({ onFilterChange }) => {
     };
 
     return (
-        <div>
-            <input
+        <div className="nameFilter">
+            <input className="nameFilter-input"
                 type="text"
                 placeholder="Filter by name..."
                 value={filterValue}

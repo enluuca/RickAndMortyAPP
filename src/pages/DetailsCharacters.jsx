@@ -23,10 +23,10 @@ export const DetailsCharacters = () => {
             <img className="detailsCharacter-img" src={character.image} alt="" />
             <div className="detailsCharacters-div">
                 <h1 className="detailsCharacters-div_h1">{character.name}</h1>            
-                <p className="detailsCharacters-div_p">Estado: {character.status}</p>
-                <p className="detailsCharacters-div_p">Especie: {character.species}</p>
-                <p className="detailsCharacters-div_p">Género: {character.gender}</p>
-                <p className="detailsCharacters-div_p">Última ubicación conocida: {character.location.name}</p>
+                <p className="detailsCharacters-div_p">State: {character.status}</p>
+                <p className="detailsCharacters-div_p">Specie: {character.species}</p>
+                <p className="detailsCharacters-div_p">Genre: {character.gender}</p>
+                <p className="detailsCharacters-div_p">Last known location: {character.location.name}</p>
             </div>
         </div>
     );
