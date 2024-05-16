@@ -1,0 +1,8 @@
+1- instalar React Vite - npm create Vite
+2 - instalar dependencias npm i
+3 - Limpiar archivo
+4 - creo carpeta components
+- creo jsx characters
+- creo jsx characterdetails
+Estos dos archivos crean el home de la app
+5 - Creo Carpeta LandingPage que agupa todos los componentes

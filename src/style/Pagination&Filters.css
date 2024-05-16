@@ -1,0 +1,70 @@
+/*Filtro por nombre*/
+.nameFilter{
+padding-left: 30px;
+padding-bottom: 3px;
+}
+
+.nameFilter-input{
+background-color: rgb(216, 204, 204);
+width: 380px;
+height: 30px;
+border-radius: 10px;
+border: none;
+color: black;
+font-size: 15px;
+margin-left: 5px;
+padding-left: 10px;
+}
+.nameFilter-input::placeholder {
+    color: black;
+    
+   
+}
+
+/* Filtro por estado */
+.status-filter{
+padding-left: 35px;
+font-size: 15px;
+}
+.status-filter-btn{
+font-size: 15px;
+color: greenyellow;
+padding: 5px;
+border: none;
+}
+.status-filter-btn:hover {
+color: #02b1c8;
+}
+
+
+/* Paginatión */
+.pagination{
+display: flex;
+padding-left: 30px;
+align-items: center;
+padding-bottom: 3px;
+
+}
+
+.pagination-btn{
+border: none;
+font-size: 22px;
+color: rgb(216, 204, 204);
+font-weight: bold;
+margin: 0 10px;
+}
+
+.pagination-btn:hover {
+    color: greenyellow;
+    font-weight: bold;
+    margin: 0 10px;
+    
+}
+
+.pagination-nun{
+font-size: 22px;
+width: 100px;
+justify-content: center;
+font-weight: bold;
+margin: 0 10px;
+}

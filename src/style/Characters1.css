@@ -1,0 +1,20 @@
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    /*display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);*/
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;    
+    list-style: none;
+    color: white;
+}
+.nameFilter-input{
+    color: white;
+}
+.pagination{
+    color: white;
+}
+.status-filter{
+    color: white;
+}

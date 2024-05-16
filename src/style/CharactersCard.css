@@ -1,0 +1,49 @@
+.container {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(60, 62, 68);
+    box-shadow: 7px 7px 5px -3px rgba(0, 0, 0, 0.8);
+}
+
+.ImgCharacter {
+    width: 200px;
+    height: 180px;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    z-index: 1;
+}
+
+.NameCharacter {
+    font-size: 1.5rem;
+    background-color: rgb(60, 62, 68);
+    color: wheat;
+    font-size: 23px;
+    text-decoration: none;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.IdCharacter,
+.StatusCharacter {
+    font-size: 1rem;
+    background-color: rgb(60, 62, 68);
+    color: wheat;
+}
+
+.StatusCharacter {
+    margin-bottom: 20px;
+    color: greenyellow;
+}
+
+.FavoriteButton{
+    border: none;
+    font-size: 20px;
+    color: wheat;
+
+}
