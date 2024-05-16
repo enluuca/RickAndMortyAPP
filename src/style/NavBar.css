@@ -5,28 +5,44 @@
     width: 100%;
     align-items: center; 
     margin-bottom: 50px;
+<<<<<<< HEAD
     background: linear-gradient(to bottom, black, #16161d);
+=======
+>>>>>>> 3a43b6fc6e4f94001592d96706323ac2793efeeb
 }
 
 .logo{
     align-items: center;
+<<<<<<< HEAD
     background: transparent;
+=======
+>>>>>>> 3a43b6fc6e4f94001592d96706323ac2793efeeb
 }
                
 .logo-img{
     height: 200px; 
     margin: 20px;
+<<<<<<< HEAD
     background: transparent;
+=======
+>>>>>>> 3a43b6fc6e4f94001592d96706323ac2793efeeb
 }
 
 .nav-links{
     font-size: 23px;
     transform: none;
+<<<<<<< HEAD
     background: transparent;
 }
 
 .link{
     
+=======
+}
+
+.link{
+    text-decoration: none;
+>>>>>>> 3a43b6fc6e4f94001592d96706323ac2793efeeb
     padding: 20px;
     color: #02b1c8;
     margin: 30px;
@@ -38,4 +54,8 @@
 
 .link:hover{
     color: greenyellow;
+<<<<<<< HEAD
+=======
+    text-decoration: none;
+>>>>>>> 3a43b6fc6e4f94001592d96706323ac2793efeeb
 }

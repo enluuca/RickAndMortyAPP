@@ -6,7 +6,10 @@ import { Pagination } from "./Pagination";
 import FavoriteButton from "./FavoriteButton";
 import StatusFilter from "./StatusFilter"; // Importa el componente de filtro de estado
 import "../style/Characters1.css";
+<<<<<<< HEAD
 import "../style/Pagination&Filters.css"
+=======
+>>>>>>> 3a43b6fc6e4f94001592d96706323ac2793efeeb
 
 export const Characters = () => {
     const [characters, setCharacters] = useState([]);
@@ -62,15 +65,23 @@ export const Characters = () => {
 
     return (
         <>
+<<<<<<< HEAD
+=======
+            <NameFilter className="characters" onFilterChange={handleFilterChange} />
+            <StatusFilter className="characters" onStatusChange={handleStatusFilterChange} /> {/* Usa el componente de filtro de estado */}
+>>>>>>> 3a43b6fc6e4f94001592d96706323ac2793efeeb
             <Pagination className="characters"
                 currentPage={currentPage}
                 totalPages={totalPages}
                 onNextPage={nextPage}
                 onPreviousPage={previousPage}
             />
+<<<<<<< HEAD
             <NameFilter className="characters" onFilterChange={handleFilterChange} />
             <StatusFilter className="characters" onStatusChange={handleStatusFilterChange} /> {/* Usa el componente de filtro de estado */}
             
+=======
+>>>>>>> 3a43b6fc6e4f94001592d96706323ac2793efeeb
             <ul className="characters">
                 {characters.map((character) => (
                     <li className="characters-li" key={character.id}>
