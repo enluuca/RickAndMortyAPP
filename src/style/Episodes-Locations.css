@@ -1,0 +1,32 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 800px;
+    
+    
+    /* Distribuye los elementos uniformemente en la fila */
+}
+
+.episodes  {
+    width: calc(40% - 10px);
+    /* Establece el ancho de cada episodio */
+    margin-bottom: 20px;
+    /* Espacio entre cada fila */
+    box-sizing: border-box;
+}
+
+.EpisodeName {
+    margin: 0;
+    font-size: 18px;
+    color: greenyellow
+}
+
+.EpisodeDate{
+    color: whitesmoke;
+}

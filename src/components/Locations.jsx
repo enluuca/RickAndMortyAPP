@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { get } from "../utils/conexionAPI";
 import { NameFilter } from "./NameFilter";
 import { Pagination } from "./Pagination";
-
+import "../style/Episodes-Locations.css"
 
 
 export const Locations = () => {
@@ -55,13 +55,17 @@ export const Locations = () => {
                 onNextPage={nextPage}
                 onPreviousPage={previousPage}
             />
-             <ul className="location">
+            <div className="contenedor">
+                <ul>
+                
                 {locations.map((location) => (
-                <li key={location.id}>
-                        <h1>{location.name}</h1>
+                    <li key={location.id} className="episodes">
+                        <h1 className="EpisodeName">{location.name}</h1>
                 </li>
                 ))}
-            </ul> 
+                    
+                </ul> 
+            </div>
         </>
     );
 };
