@@ -12,17 +12,10 @@ const StatusFilter = ({ onStatusChange }) => {
     return (
         <div className="status-filter">
             <span>Status Filter:</span>
-<<<<<<< HEAD
             <button className="status-filter-btn" onClick={() => handleStatusChange("")}>All</button>
             <button className="status-filter-btn" onClick={() => handleStatusChange("alive")}>Alive</button>
             <button className="status-filter-btn" onClick={() => handleStatusChange("dead")}>Dead</button>
             <button className="status-filter-btn" onClick={() => handleStatusChange("unknown")}>Unknown</button>
-=======
-            <button className="status-filter" onClick={() => handleStatusChange("")}>All</button>
-            <button className="status-filter" onClick={() => handleStatusChange("alive")}>Alive</button>
-            <button className="status-filter" onClick={() => handleStatusChange("dead")}>Dead</button>
-            <button className="status-filter" onClick={() => handleStatusChange("unknown")}>Unknown</button>
->>>>>>> 3a43b6fc6e4f94001592d96706323ac2793efeeb
         </div>
     );
 };
