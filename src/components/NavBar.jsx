@@ -6,7 +6,7 @@ export const NavBar = () => {
     return (
         <nav className="navBar">
             <div className="logo">
-                <img src="/src/assets/RyM.png" alt="Rick and Morty Logo" title="Rick and Morty Logo" className="logo-img"/>
+                <img src="/src/assets/rym.png" alt="Rick and Morty Logo" title="Rick and Morty Logo" className="logo-img"/>
             </div>
             <div className="nav-links">
                 <Link to="/characters" className="link">CHARACTERS</Link>
