@@ -56,14 +56,17 @@ export const Locations = () => {
                 onPreviousPage={previousPage}
             />
             <div className="contenedor">
-                <ul>
+                <ul className="ContenedorUl">
+                    <div className="conteiner">
                 
                 {locations.map((location) => (
-                    <li key={location.id} className="episodes">
-                        <h1 className="EpisodeName">{location.name}</h1>
+                    <li key={location.id} className="locations">
+                        <h1 className="LocationName">{location.name}</h1>
+                        <h2 className="LocationType">{location.type}</h2>
+                        <p className="LocarionResidents">Residents: {location.residents.length}</p>
                 </li>
-                ))}
-                    
+                ))}  
+                    </div>        
                 </ul> 
             </div>
         </>

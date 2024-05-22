@@ -1,4 +1,4 @@
-.contenedor{
+.contenedor {
     display: flex;
     justify-content: center;
 }
@@ -8,12 +8,12 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 800px;
-    
-    
+
+
     /* Distribuye los elementos uniformemente en la fila */
 }
 
-.episodes  {
+.episodes {
     width: calc(40% - 10px);
     /* Establece el ancho de cada episodio */
     margin-bottom: 20px;
@@ -27,6 +27,38 @@
     color: greenyellow
 }
 
-.EpisodeDate{
+.EpisodeDate {
     color: whitesmoke;
+}
+
+.contenedorLoc {
+    display: flex;
+    width: 850px;
+    padding-left: 80px;
+    flex-direction: row;
+}
+.locations{
+    padding-bottom: 10px;
+    width: 250px;
+    
+}
+
+.LocationName {
+
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 25px;
+    color: greenyellow;
+}
+
+.LocationType {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.LocarionResidents {
+    margin: 0;
+    font-size: 18px;
+    color: whitesmoke
 }
